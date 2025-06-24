@@ -1,0 +1,59 @@
+
+@font-face {
+    font-family: 'SofiaSemi';
+    font-style: normal;
+    font-weight: 1 1000;
+    src: url('fonts/sofia/sofiasanssemicondensed-variablefont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'sofiasanscondensed';
+    font-style: normal;
+    font-weight: 1 1000;
+    src: url('fonts/sofia/sofiasanscondensed-variablefont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'sofiasansextra';
+    font-style: normal;
+    font-weight: 1 1000;
+    src: url('fonts/sofia/sofiasansextracondensed-variablefont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'sofiasans';
+    src: url('fonts/sofiasans-variablefont_wght.ttf') format('truetype');
+}
+
+* {
+    text-decoration: none !important;
+    padding: 0;
+}
+
+html {
+    font-size: 14px !important;
+}
+
+:root {
+    /*1st Pair*/
+    /*--body-text: "Fira Sans", sans-serif;*/
+    /*--heading: "Fira Sans Condensed", sans-serif;*/
+    /*2nd Pair*/
+    /*--body-text: "Roboto", sans-serif;*/
+    --body-text: "SofiaSemi", sans-serif;
+    --heading: "SofiaSemi", sans-serif;
+    --header-gradient: linear-gradient(90deg, var(--main-bg-color) 60%, var(--main-bg-secondary-color) 100%) !important;
+    --mx-height: calc(100dvh - 158px);
+}
+
+.sofiacond {
+    font-family: 'sofiasanscondensed';
+}
+
+.sofiaextra {
+    font-family: 'sofiasansextra';
+}
+
+.sofia {
+    font-family: "SofiaSemi" !important;
+}
