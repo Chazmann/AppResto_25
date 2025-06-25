@@ -12,7 +12,7 @@
     </header>
     <main>
         <div class="categorias">
-            <div class="icono">link1</div>
+            <div class="icono" onclick="mostrarAlerta()">link1</div>
             <div class="icono">link2</div>
             <div class="icono">link3</div>
             <div class="icono">link4</div>
@@ -39,6 +39,20 @@
 
         </div>
         <section class="restoContainer">
+            <div class="modal sofiacond hidden">
+                <div class="encabezadoAlerta">
+                    <button class="btn-close">
+                        <i class="fa fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="alerta-texto">
+                    <p>¡Hola! ¿Cómo estás? Te damos la bienvenida a Pedilo Ya, la app de delivery más rápida y confiable. 
+                    <br>¿Qué te gustaría pedir hoy?</p>
+                </div>
+                <div class="alerta-boton pd-2">
+                    <button class="btn">Empezar</button>
+                </div>
+            </div>
             <article class="resto">1</article>
             <article class="resto">2</article>
             <article class="resto">3</article>
@@ -51,6 +65,16 @@
     </main>
 
 
+<script>
+        function mostrarAlerta() {
+            const alerta = document.querySelector('.modal');
+            alerta.classList.remove('hidden');
+        }
 
+        document.querySelector('.btn-close').addEventListener('click', function() {
+            const modal = document.querySelector('.modal');
+            modal.classList.add('hidden');
+        });
+    </script>
 </body>
 </html>
