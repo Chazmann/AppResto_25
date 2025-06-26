@@ -3,6 +3,7 @@
     {
       "id_resto": "R001",
       "nombre": "El Rincón del Sabor",
+      "src": "https://www.bnefoodtrucks.com.au/sites/foodtrucks/files/styles/avatarlarge/public/images/Koma%20Sliders/redkomalogoolaf_0.jpg?itok=1Er2gbGN",
       "tipo_comida": "Italiana",
       "distancia_km": 2.5,
       "horario": "12:00-15:00, 19:00-23:00",
@@ -12,6 +13,7 @@
     {
       "id_resto": "R002",
       "nombre": "Sushi Lovers",
+      "src": "https://www.bnefoodtrucks.com.au/sites/foodtrucks/files/styles/avatarlarge/public/images/Nom%20Nom%20Eats/ayspruay.png?itok=6BA4IING",
       "tipo_comida": "Japonesa",
       "distancia_km": 1.0,
       "horario": "19:30-00:00",
@@ -21,6 +23,7 @@
     {
       "id_resto": "R003",
       "nombre": "La Parrilla Gaucha",
+      "src": "https://www.bnefoodtrucks.com.au/sites/foodtrucks/files/styles/avatarlarge/public/images/Rolling%20Stone%20Pizza/rspizza_bricks.png?itok=NEq3QsoB",
       "tipo_comida": "Argentina",
       "distancia_km": 5.0,
       "horario": "12:30-16:00, 20:00-01:00",
@@ -30,6 +33,7 @@
     {
       "id_resto": "R004",
       "nombre": "Veggie Delight",
+            "src": "https://www.bnefoodtrucks.com.au/sites/foodtrucks/files/styles/avatarlarge/public/images/Catch%20and%20Kiss%20Seafood/catchkiss-circluar-blue.png?itok=cTy90Q0P",
       "tipo_comida": "Vegetariana",
       "distancia_km": 3.2,
       "horario": "11:00-22:00",
@@ -39,6 +43,7 @@
     {
       "id_resto": "R005",
       "nombre": "Burger Haven",
+         "src": "https://www.bnefoodtrucks.com.au/sites/foodtrucks/files/styles/avatarlarge/public/images/Ruby%20Little%20Red%20IceCream/ruby_logo_0.jpg?itok=Ch7Xo-aD",
       "tipo_comida": "Americana",
       "distancia_km": 0.8,
       "horario": "12:00-23:00",
@@ -48,6 +53,7 @@
     {
       "id_resto": "R006",
       "nombre": "Sabor Hindú",
+           "src": "https://www.bnefoodtrucks.com.au/sites/foodtrucks/files/styles/avatarlarge/public/images/Sate%20House/sate_house_logo.jpg?itok=xVbi5t3c",
       "tipo_comida": "India",
       "distancia_km": 4.5,
       "horario": "19:00-23:00",

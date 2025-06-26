@@ -1,0 +1,123 @@
+openapi: 3.0.3
+info:
+  title: API de Restaurantes y Platos
+  description: API que proporciona información sobre restaurantes, sus platos y categorías generales.
+  version: 1.0.0
+
+paths:
+  /restaurantes:
+    get:
+      summary: Obtener la lista de restaurantes
+      responses:
+        '200':
+          description: Lista de restaurantes
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  restaurantes:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Restaurante'
+
+  /platos:
+    get:
+      summary: Obtener la lista de platos
+      responses:
+        '200':
+          description: Lista de platos por restaurante
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  platos:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Plato'
+
+  /categorias:
+    get:
+      summary: Obtener categorías generales de comida
+      responses:
+        '200':
+          description: Lista de categorías generales
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  categorias_generales:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/CategoriaGeneral'
+
+components:
+  schemas:
+    Restaurante:
+      type: object
+      properties:
+        id_resto:
+          type: string
+          example: R001
+        nombre:
+          type: string
+          example: El Rincón del Sabor
+        tipo_comida:
+          type: string
+          example: Italiana
+        distancia_km:
+          type: number
+          format: float
+          example: 2.5
+        horario:
+          type: string
+          example: "12:00-15:00, 19:00-23:00"
+        rating:
+          type: integer
+          minimum: 1
+          maximum: 5
+          example: 4
+        price:
+          type: integer
+          description: Nivel de precio de 1 (económico) a 3 (caro)
+          minimum: 1
+          maximum: 3
+          example: 2
+
+    Plato:
+      type: object
+      properties:
+        id_resto:
+          type: string
+          example: R001
+        nombrePlato:
+          type: string
+          example: Lasaña Bolognesa
+        ingredientes:
+          type: array
+          items:
+            type: string
+          example: ["Carne picada", "Salsa de tomate", "Pasta", "Queso"]
+        descripcion:
+          type: string
+          example: Clásica lasagna casera con capas de pasta, abundante salsa boloñesa y gratinado de queso.
+        precioPlato:
+          type: number
+          format: float
+          example: 15.50
+        urlImg:
+          type: string
+          format: uri
+          example: https://example.com/lasana.jpg
+
+    CategoriaGeneral:
+      type: object
+      properties:
+        icono:
+          type: string
+          example: fa-pizza-slice
+        nombreCat:
+          type: string
+          example: Pizzas

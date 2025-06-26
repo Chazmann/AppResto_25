@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * { padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        transition: all 1s ease !important;
+    }
+
+    body {
+        height: 100vh;
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+        display: grid;
+        place-items: center;
+    }
+
+    #saludo {
+        background-color: rgb(229, 157, 113);
+        padding: 1em;
+        color: #333;
+        font-size: 24px;
+        text-align: center;
+        margin-top: 20%;
+        position: relative;
+       
+        /* overflow: hidden; */
+    }
+
+    #saludo::before {
+        position: absolute;
+        content: '';
+        background-color: blue;
+        color: rgb(117, 110, 110);
+        opacity: .5;
+        width: 2em;
+        height: 2em;
+        top: -100px;
+        left: -100px;
+        animation: control 1s infinite;
+        transition: all 1s linear 1s;
+    }
+
+    #saludo::after {
+        position: absolute;
+        content: 'HOLA';
+        background-color: rgb(164, 27, 166);
+        opacity: .5;
+        width: 2em;
+        height: 2em;
+        bottom: -100px;
+        right: -100px;
+         animation: control2 3s infinite;
+
+    }
+
+@keyframes control2 {
+        0% {
+            top: -100px;
+            right: -100px;
+        }
+         50% {
+            top: 0;
+            left: 0px;
+            border-radius: 3em;
+            background-color: rgb(136, 20, 154);
+        }
+        100% {
+          top: -120px;
+            right: -120px;
+        }
+    }
+
+    @keyframes control {
+        0% {
+            top: -100px;
+            left: -100px;
+        }
+         50% {
+            top: 0;
+            left: 0px;
+            border-radius: 3em;
+            background-color: red;
+        }
+        100% {
+          top: -120px;
+            left: -120px;
+        }
+    }
+</style>
+
+<body>
+    <span id="saludo">HOLA</span>
+</body>
+
+</html>
