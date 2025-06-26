@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ejemploresponsive.css">
+
+
+    <title>Ejemplo Responsive</title>
+</head>
+
+<body>
+    <h1>DISEÑO ADAPTATIVO</h1>
+    <article class="menu" id="idMenu">
+      <span class="headerBoton">
+           <button class="btnClose" onclick="ocultarMenu()">
+            <i class="fa fa-angles-right"></i>
+        </button>
+      </span>
+        <br>
+        <ul>
+            <li class="linkMenu">Contacto</li>
+
+            <li class="linkMenu">Algo más</li>
+
+            <li class="linkMenu">Otro</li>
+            </li>
+        </ul>
+       
+    </article>
+
+
+    <span class="linkMenu">AÑLSKDJHFLÑKASHJDLÑKF JAÑLSKDJFÑL KASJDÑLFKJ</span>
+
+
+    <button class="btnMenu" id="btnMenu" onclick="mostrarMenu()">
+        <i class="fa fa-bars"></i>
+    </button>
+
+
+    <script>
+
+        const pirulo = document.getElementById('idMenu')
+
+        function mostrarMenu() {           
+            pirulo.classList.add('mostrarMenu')
+            //pirulo.innerHTML = `<span clss="linkMenu">AÑLSKDJHFLÑKASHJDLÑKF JAÑLSKDJFÑL KASJDÑLFKJ</span>`a
+        }
+
+        function ocultarMenu(){
+           pirulo.classList.remove('mostrarMenu')
+        }
+
+    </script>
+</body>
+
+</html>
