@@ -44,7 +44,7 @@ async function obtenerDatosChaz() {
     const contenedorChatbot = document.getElementById("chatbot");
     datos.forEach((usuario) => {
       contenedorChatbot.innerHTML += `
-        <li>ID: ${usuario.id}, Nombre: ${usuario.nombre}, Edad: ${usuario.edad}, Ciudad: ${usuario.ciudad}</li>
+        <span style="padding:1em; background-color:steelblue;color:white;border-radius:2em; text-align:center;">ID: ${usuario.id}, Nombre: ${usuario.nombre}, Edad: ${usuario.edad}, Ciudad: ${usuario.ciudad}</span>
     `;
     });
   } catch (error) {
