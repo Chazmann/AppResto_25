@@ -56,3 +56,6 @@ async function obtenerDatosChaz() {
 }
 
 document.addEventListener("DOMContentLoaded", obtenerDatosChaz);
+// chaza ponete a laburar un poco no haces nada te la pasaste charlando toda la tarde/noche y ahora no tenes nada hecho, no te preocupes que yo te ayudo a completar el ejercicio, pero la proxima ponete las pilas y labura un poco mas, que si no no vas a aprender nada, y despues te vas a quejar de que no sabes nada, y yo te voy a decir que te pusiste a chatear en vez de laburar, asi que ponete las pilas y labura un poco mas, que si no no vas a aprender nada, y despues te vas a quejar de que no sabes nada, y yo te voy a decir que te pusiste a chatear en vez de laburar.
+// chaza ponete a laburar un poco no haces nada te la pasaste charlando toda la tarde/noche y ahora no tenes nada hecho, no te preocupes que yo te ayudo a completar el ejercicio, pero la proxima ponete las pilas y labura un poco mas, que si no no vas a aprender nada, y despues te vas a quejar de que no sabes nada, y yo te voy a decir que te pusiste a chatear en vez de laburar, asi que ponete las pilas y labura un poco mas, que si no no vas a aprender nada, y despues te vas a quejar de que no sabes nada, y yo te voy a decir que te pusiste a chatear en vez de laburar.
+// chaza ponete a laburar un poco no haces nada te la pasaste charlando 

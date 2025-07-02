@@ -23,7 +23,9 @@ header {
     width: 100%;
 }
 
+
 header .buscador {
+    
     background-color: gainsboro;
     position: absolute;
     height: 3em;
